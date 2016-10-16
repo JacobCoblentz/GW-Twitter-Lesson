@@ -7,6 +7,7 @@ print(x)
 paste(txt, x)
 # A package is like an app- it's written to extend the funcitonality of R into something new. 
 # Sort of like how on its own, your Iphone won't let write tweets, but with the twitter app, you can write tweets.
+# Callback URL is http://127.0.0.1:1410
 require(devtools)
 install.packages("devtools")
 devtools::install_github("mkearney/rtweet")
