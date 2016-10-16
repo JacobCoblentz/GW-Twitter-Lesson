@@ -233,7 +233,7 @@ reply_tweet<-function(dat)
   }else if(dat$sentiment<0){
     tweet_text<-paste0("I hope that data can improve your day @",dat$screen_name ," -come to GW Data!")
   }else if(dat$sentiment>0){
-    tweet_text<-paste("@",dat$screen_name, "shows that using data makes you happy!")
+    tweet_text<-paste0("@",dat$screen_name, "shows that using data makes you happy!")
   }
   
   post_tweet(tweet_text, token=twitter_token)
